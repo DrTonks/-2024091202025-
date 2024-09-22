@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024091202025-唐孝玉-前端-03</title>
+    <style>
+        .back{
+            background-color: rgb(221, 214, 214);
+            display: inline-block;
+            border: 5px solid yellow;
+            position: absolute;
+           
+            right: 700px;
+        
+        }/*乱写的，没用，不用看*/
+        .box{
+            margin:15px;
+            display: inline-block;        /*这个东西困扰了我10年*/
+            width: 60px;
+            height: 30px;
+        }/*小单车*/
+        .color1{
+            background-color: green;
+        }
+        .color2{
+            background-color: blue;     /*这个才是蓝！*/
+        }
+        .color3{
+            background-color: yellow;
+        }
+        .con{
+            width: fit-content;   /*让盒子自动抱住小单车*/
+            position: absolute;   /*绝对定位一下，方便实现位移*/
+            margin: 30px auto;
+            border-radius: 8px;
+            padding: 15px; 
+            border: 5px solid cyan;
+            top: 100px; 
+            right: 700px;
+            
+            
+        }/*大盒子1，已经尽可能让它长得像题目里的了，补药喷我呜呜呜*/
+        .con2{
+            width: fit-content;/*自动抱住小单车*/
+            position: absolute;
+            margin: 30px auto;
+            border-radius: 8px;
+            padding: 15px; 
+            border: 5px solid cyan;
+            bottom:  100px; 
+            right: 700px;
+            /* 两道题分别修改top、bottom、left、right就可以达到上下、左右的效果，有点笨，由于这种操作移动方式基于像素，不同的电脑可能会有不一样的呈现形式，前辈补药骂我*/
+            
+        }/*大盒子2*/
+    </style>
+</head>
+<body>
+    <div class="back">2024091202025-唐孝玉-前端-03</div>
+
+    <div class="con" >
+        <div class="box color1"></div>
+        <div class="box color1"></div>
+        <div class="box color1"></div>
+        <br>
+        <div class="box color2"></div>
+        <div class="box color2"></div>
+        <div class="box color2"></div>
+        <br>
+        <div class="box color3"></div>
+        <div class="box color3"></div>
+        <div class="box color3"></div>
+
+    
+    </div>
+    <div class="con2" >
+        <div class="box color1"></div>
+        <div class="box color1"></div>
+        <div class="box color1"></div>
+        <br>
+        <div class="box color2"></div>
+        <div class="box color2"></div>
+        <div class="box color2"></div>
+        <br>
+        <div class="box color3"></div>
+        <div class="box color3"></div>
+        <div class="box color3"></div>
+
+
+    </div>
+</body>
+</html>
