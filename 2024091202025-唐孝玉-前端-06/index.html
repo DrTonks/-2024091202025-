@@ -65,8 +65,8 @@
                 let maxone = Math.max(...Object.values(every))
                 if(value===maxone){
                     //console.log(index)
-                    let $display = $("<div></div>");
-                    $display.text(index).css({
+                    let display = $("<div></div>");
+                    display.text(index).css({
                         display: "flex", 
                         opacity: 0 ,
                         bottom:0,
@@ -76,7 +76,7 @@
                         position:"absolute",
                         width:"100%"
                     }).animate({ opacity: 1 }, 1000)
-                    $display.appendTo("#bottom");
+                    display.appendTo("#bottom");
                console.log(index)
             }
             })
